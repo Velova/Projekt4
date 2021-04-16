@@ -5,4 +5,51 @@
 }
 
 :root {
+  --blackolive: #41463d;
+  --lavenderfloral: #9d8df1;
+  --lightsteelblue: #b8cdf8;
+  --magicmint: #b8cdf8;
+  --seagreencrayola: #1cfeba;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+}
+
+header {
+  display: flex;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-content: flex-end;
+  background-image: linear-gradient(to right, var(--blackolive), white);
+}
+
+main {
+  background-image: linear-gradient(var(--lavenderfloral), var(--magicmint));
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+footer {
+  background-image: linear-gradient(to left, var(--blackolive), white);
+  text-align: center;
+}
+footer p {
+  color: white;
+}
+
+.itemrow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  border-style: solid;
+  border-width: 1px;
+  margin: 10px;
+}
+
+.itemimage {
+  height: 100px;
 }
