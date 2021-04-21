@@ -18,11 +18,23 @@ body {
 }
 
 header {
-  display: flex;
   grid-row-start: 1;
   grid-row-end: 2;
-  justify-content: flex-end;
   background-image: linear-gradient(to right, var(--blackolive), white);
+}
+
+.headermain {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  background-color: var(--magicmint);
+  height: 50px;
+}
+
+header img {
+  height: 50px;
 }
 
 main {
@@ -52,4 +64,37 @@ footer p {
 
 .itemimage {
   height: 100px;
+}
+
+p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.addtocart {
+  width: 100%;
+}
+
+.item {
+  background-color: var(--seagreencrayola);
+  margin: 10px;
+}
+
+.item img {
+  margin: 10px;
+}
+
+.itemname p {
+  text-align: center;
+}
+
+.categories {
+  height: 80%;
+}
+
+.categorydropdown {
+  position: absolute;
+}
+
+.categories:hover .categorydropdown {
+  display: none;
 }
