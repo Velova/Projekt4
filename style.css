@@ -15,11 +15,14 @@
 body {
   display: grid;
   grid-template-rows: 50px 1fr 50px;
+  grid-template-columns: 100px 1fr;
 }
 
 header {
   grid-row-start: 1;
   grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: -1;
   background-image: linear-gradient(to right, var(--blackolive), white);
 }
 
@@ -31,6 +34,10 @@ header {
 nav {
   background-color: var(--magicmint);
   height: 50px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
 header img {
@@ -41,11 +48,17 @@ main {
   background-image: linear-gradient(var(--lavenderfloral), var(--magicmint));
   grid-row-start: 2;
   grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 footer {
   background-image: linear-gradient(to left, var(--blackolive), white);
   text-align: center;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 footer p {
   color: white;
@@ -95,6 +108,12 @@ p {
   position: absolute;
 }
 
+.alldropdown {
+}
+
 .categories:hover .categorydropdown {
+}
+
+.hide {
   display: none;
 }
