@@ -1,80 +1,72 @@
+
+
+
+
+
+/*
 Shoppingcart = window.localStorage;
 
-const dropdown = document.getElementById("dropdown");
-const dropdownmenu = document.getElementById("dropdownmenu");
-const cartdropdown = document.getElementById("cartdropdown");
-const cart = document.getElementById("cart");
-const cartcontainer = document.getElementById("cartcontainer");
-
 const items = document.querySelectorAll(".addtocart");
+const cartdropdown = document.getElementById("cartdropdown");
 
-const item1name = localStorage.setItem("Name", "");
-const item1price = localStorage.setItem("Price", 0);
-const getitem1name = localStorage.getItem("Name");
-const getitem1price = localStorage.getItem("Price");
+var item1 = {
+    itemname: "Hooman",
+    itemprice: 15,
+    itemamount: 0,
+    itemid: 1
+}
 
-console.log("Itemname: " + getitem1name);
-console.log("Itemprice: " + getitem1price);
+var item2 = {
+    itemname: "Chikkin'",
+    itemprice: 420, 
+    itemamount: 0,
+    itemid: 2
+}
 
-setTimeout
-let test = document.createElement("div");
-dropdownmenu.append(test);
+const item1name = localStorage.setItem("Name1", item1.itemname);
+const item1price = localStorage.setItem("Price1", 0);
+const item1amount = localStorage.setItem("Amount1", 0);
+const getitem1name = localStorage.getItem("Name1");
+const getitem1price = localStorage.getItem("Price1");
+const getitem1amount = localStorage.getItem("Amount1")
+
+
+
+
+let cartappend = document.createElement("div");
 
 function TakeClickedId()
 {
     let clickeditemid = parseInt(event.target.id);
-    if(clickeditemid == 1)
-    {
-        
-    }
-    else if(clickeditemid == 2)
-    {
-
-    }
-    console.log("TakeClickedId()");
+    StorageAddItem(clickeditemid);
+     //console.log("TakeClickedId()");
 }
 
-dropdown.addEventListener("click", DropDownVisible);
-cart.addEventListener("click", CartItemsShow);
-
-dropdownmenu.classList.add("hide");
-cartdropdown.classList.add("hide");
-
-
-let hidecategory = true;
-function DropDownVisible()
+function StorageAddItem(clickeditemid)
 {
-    if(hidecategory)
+    if(clickeditemid == item1.itemid)
     {
-        dropdownmenu.classList.remove("hide");
-        hidecategory = false;
+       if(getitem1amount == 0)
+       {
+           getitem1amount++;
+           console.log(getitem1amount);
+        cartappend.textContent = getitem1name + " " + getitem1price * getitem1amount;
+        cartdropdown.append(cartappend);
+        console.log("First item");
+       }
+       else
+       {
+
+       }
+      
     }
-    else
+    else if(clickeditemid == item2.itemid)
     {
-        dropdownmenu.classList.add("hide");
-        hidecategory = true;
+        console.log("Secnond item");
     }
-    console.log("DropDownVisible()");
+    console.log("StorageAddItem();");
 }
-
-
-
-let hidecart = true;
-function CartItemsShow()
-{
-    if(hidecart)
-    {
-        cartdropdown.classList.remove("hide");
-        hidecart = false;
-    }
-    else
-    {
-        cartdropdown.classList.add("hide");
-        hidecart = true;
-    }
-    console.log("Cartdropdown()");
-}
-
+*/
 
 
 

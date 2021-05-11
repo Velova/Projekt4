@@ -5,11 +5,12 @@
 }
 
 :root {
+  --white: white;
   --blackolive: #41463d;
   --lavenderfloral: #9d8df1;
   --lightsteelblue: #b8cdf8;
   --magicmint: #b8cdf8;
-  --seagreencrayola: #1cfeba;
+  --maximumpurple: #7d387d;
 }
 
 body {
@@ -55,6 +56,11 @@ main {
   color: var(--lavenderfloral);
 }
 
+.main1 button:hover {
+  border-color: var(--maximumpurple);
+  color: var(--maximumpurple);
+}
+
 .main1 h1 {
   text-align: center;
 }
@@ -72,11 +78,12 @@ main {
 }
 
 .main2 {
+  display: flex;
   background-image: radial-gradient(var(--lavenderfloral), var(--magicmint));
 }
 
 footer {
-  background-image: linear-gradient(to left, var(--blackolive), white);
+  background-image: linear-gradient(to left, var(--blackolive), var(--white));
   text-align: center;
   grid-row-start: 3;
   grid-row-end: 4;
@@ -84,7 +91,23 @@ footer {
   grid-column-end: 3;
 }
 footer p {
-  color: white;
+  color: var(--white);
+}
+
+.cartitemrow {
+  display: flex;
+}
+
+.cartitemrow img {
+  width: 50px;
+}
+
+.cartitemrow input {
+  width: 50px;
+}
+
+.cartitemname .cartitemprice {
+  margin-right: 10px;
 }
 
 .itemrow {
@@ -110,8 +133,32 @@ p {
   width: 100%;
 }
 
+.addtocart:hover {
+  border-color: var(--maximumpurple);
+}
+
+.cartdropdown {
+  display: block;
+  position: relative;
+  color: white;
+  background-color: var(--blackolive);
+}
+
+.cartdropdown button {
+  width: 100px;
+}
+
+.cartdropdown .div {
+  border-style: solid;
+  border-color: var(--white);
+}
+
+.cart:hover + .cartdropdown {
+  display: block;
+}
+
 .item {
-  background-color: white;
+  background-color: var(--white);
   margin: 10px;
 }
 
@@ -122,36 +169,6 @@ p {
 
 .itemname p {
   text-align: center;
-}
-
-.categories {
-  border: solid;
-  text-align: center;
-  width: 100%;
-  background-color: var(--seagreencrayola);
-  color: var(--blackolive);
-}
-
-.categorybutton:hover .categories {
-  opacity: 1.1;
-}
-
-.categorydropdown {
-  display: flex;
-  background-color: var(--seagreencrayola);
-  flex-direction: column;
-  color: black;
-}
-
-.categorydropdown a {
-  border: solid;
-  border-color: var(--blackolive);
-  text-decoration-line: none;
-  text-align: center;
-}
-
-.alldropdown {
-  background-color: var(--seagreencrayola);
 }
 
 .hide {
@@ -165,4 +182,57 @@ p {
 
 .cartcontainer:hover img {
   border-style: solid;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: var(--blackolive);
+}
+
+.dropdowncontent {
+  display: none;
+  position: absolute;
+  background-color: var(--white);
+  width: 100%;
+}
+
+.dropdowncontent a {
+  display: block;
+  background-color: var(--blackolive);
+  text-align: center;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.dropdownbutton {
+  border: none;
+  background-color: var(--blackolive);
+  color: var(--white);
+  border-style: solid;
+  border-color: var(--white);
+  width: 100%;
+}
+
+.dropdownbutton:hover {
+  background-color: var(--white);
+  color: var(--maximumpurple);
+  border-color: var(--maximumpurple);
+}
+
+.dropdowncontent a:hover {
+  background: var(--white);
+  color: var(--maximumpurple);
+  border-color: var(--maximumpurple);
+}
+
+.dropdownbutton:hover + .dropdowncontent {
+  display: block;
+}
+
+.dropdowncontent:hover {
+  display: block;
 }
