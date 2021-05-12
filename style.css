@@ -113,7 +113,6 @@ p {
 .cartimg {
   width: 50px;
   display: flex;
-  justify-content: ;
   flex-direction: column;
 }
 
