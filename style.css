@@ -36,8 +36,8 @@ header {
   height: 50px;
 }
 
-.cart {
-  width: 50px;
+.flexfiller {
+  width: 275.05px;
 }
 
 main {
@@ -78,7 +78,7 @@ main {
 }
 
 .main2 {
-  display: flex;
+  justify-content: space-around;
   background-image: radial-gradient(var(--lavenderfloral), var(--magicmint));
 }
 
@@ -94,8 +94,57 @@ footer p {
   color: var(--white);
 }
 
+.purchasebutton {
+  width: 100px;
+}
+
+.purchasebutton:hover {
+  border-color: var(--maximumpurple);
+}
+
+p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.cart {
+  width: 50px;
+}
+
+.cartimg {
+  width: 50px;
+  display: flex;
+  justify-content: ;
+  flex-direction: column;
+}
+
+.cartiteminformation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartiteminformation p {
+  border-left: solid;
+  border-right: solid;
+}
+
+.cartiteminformationprice .cartiteminformationamount {
+  width: 50px;
+}
+
+.cartiteminformationitem {
+  width: 150px;
+}
+
 .cartitemrow {
   display: flex;
+  border: solid;
+  border-top: solid;
+  border-left: solid;
+  border-right: solid;
+}
+
+.cartitemrow:hover {
+  border-color: var(--maximumpurple);
 }
 
 .cartitemrow img {
@@ -106,27 +155,13 @@ footer p {
   width: 50px;
 }
 
-.cartitemname .cartitemprice {
-  margin-right: 10px;
-}
-
-.itemrow {
+.carttotal {
   display: flex;
   justify-content: space-between;
 }
 
-.item {
-  border-style: solid;
-  border-width: 1px;
-  margin: 10px;
-}
-
-.itemimage {
-  height: 100px;
-}
-
-p {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+.cartitemprice {
+  text-align: center;
 }
 
 .addtocart {
@@ -138,14 +173,31 @@ p {
 }
 
 .cartdropdown {
-  display: block;
-  position: relative;
+  z-index: 1;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50px;
   color: white;
   background-color: var(--blackolive);
 }
 
-.cartdropdown button {
+.cartitempicplusname {
+  display: flex;
+  width: 150px;
+}
+
+.cartitemrow button {
   width: 100px;
+}
+
+.cartcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartcontainer:hover img {
+  border-style: solid;
 }
 
 .cartdropdown .div {
@@ -153,8 +205,34 @@ p {
   border-color: var(--white);
 }
 
-.cart:hover + .cartdropdown {
+.cartimg:hover .cartdropdown {
   display: block;
+}
+
+.cartdropdown:hover {
+  display: block;
+}
+
+.empty {
+  width: 100px;
+}
+
+.allitemcontainer {
+  display: flex;
+}
+
+.itemrow {
+  display: flex;
+}
+
+.item {
+  border-style: solid;
+  border-width: 1px;
+  margin: 10px;
+}
+
+.itemimage {
+  height: 100px;
 }
 
 .item {
@@ -173,15 +251,6 @@ p {
 
 .hide {
   display: none;
-}
-
-.cartcontainer {
-  display: flex;
-  flex-direction: column;
-}
-
-.cartcontainer:hover img {
-  border-style: solid;
 }
 
 .dropdown {

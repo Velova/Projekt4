@@ -13,56 +13,75 @@
 <body>
     <header>
         <div class="headermain">
-            <a href="index.html"><img class="logo" src="templogo.png" alt=""></a>
+            <a href="index.html"><img class="logo" src="logo.png" alt="picture of logo"></a>
             <div class="cartcontainer">
-                <img class="cart" id= "cart" src="shoppingcart.png" alt="Kundvagn">
-                <div class="cartdropdown" id="cartdropdown">
-                    <div class="cartitemrow">
-                        <img src="temporaryitem.png" alt="">
-                        <div class="cartitemname">Hooman</div>
-                        <div class="cartitemprice">Price: $15</div>
-                        <input type="number" value="1">
-                        <button class="removebutton">REMOVE</button>
+                <div class="cartimg">
+                    <img class="cart" id= "cart" src="shoppingcart.png" alt="cart menu button">
+                    <div class="cartdropdown" id="cartdropdown">
+                        <div class="cartiteminformation">
+                            <p class="cartiteminformationitem">Item</p>
+                            <p class="cartiteminformationprice">Price</p>
+                            <p class="cartiteminformationamount">Amount</p>
+                            <div class="empty"></div>
+                        </div>
+                        <div class="cartitems">
                     </div>
-                    <div class="cartitemrow">
-                        <img src="temporaryitem.png" alt="">
-                        <div class="cartitemname">Chikkin</div>
-                        <div class="cartitemprice">Price: $42</div>
-                        <input type="number" value="3">
-                        <button class="removebutton">REMOVE</button>
+                        <div class="carttotal">
+                            <p class="carttotalprice">$0</p>
+                            <button class="purchasebutton">Purchase</button>
+                        </div>
                     </div>
                 </div>
+               
             </div>
-        </div>s
+        </div>
     </header>
     <div class="dropdown"> 
         <button class="dropdownbutton">Categories</button>
         <div class="dropdowncontent">
-            <a href="paintfood.html">PaintFood</a>
-            <a href="paintclothes.html">PaintClothes</a>
+            <a href="#hottoday">Hot Today💥</a>
+            <a href="#paintfood">PaintFood🍔</a>
+            <a href="#painttoys">PaintToys🚗</a>
             <a href=""></a>
         </div>
     </div>
     <main>
         <div class="main1">
             <div class="textmain1">
-                <h1>A PLACE TO BUY QUALITY</h1>
-                <h1>PAINT PRODUCTS</h1>
+                <h1>A PLACE TO BUY QUALITY<br>PAINT PRODUCTS</h1>
             </div>
             <button><p>SHOP TODAY!</p></button>
         </div>
-        <div class="hottoday">
-            
-        </div>
         <div class="main2">
+            <div>
+            <h2 id="hottoday">Hot Today💥</h2>
+            <div class="allitemcontainer">
             <div class="itemcontainer">
                 <div class="itemrow">
                 <div class="item">
                     <div class="iteminfo">
-                    <img class="itemimage" src="temporaryitem.png" alt="">
+                    <img class="itemimage" src="rabbit.png" alt="picture of unirabbit">
+                    <div class="itemname"><p>UniRabbit</p></div>
+                    <div class="iteminformation"><p>A rabbit, with a horn</p> </div>
+                    <div class="itemprice"><p>$99</p></div>
+                </div>
+                    <button class="addtocart">Add To Cart</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div>
+            <h2 id="paintfood">PaintFood🍔</h2>
+            <div class="allitemcontainer">
+            <div class="itemcontainer">
+                <div class="itemrow">
+                <div class="item">
+                    <div class="iteminfo">
+                    <img class="itemimage" src="temporaryitem.png" alt="picture of human">
                     <div class="itemname"><p>Hooman</p></div>
                     <div class="iteminformation"><p>Just a hooman, idk lol</p> </div>
-                    <div class="itemprice"><p>15:-</p></div>
+                    <div class="itemprice"><p>$15</p></div>
                 </div>
                     <button class="addtocart">Add To Cart</button>
                 </div>
@@ -72,21 +91,132 @@
                 <div class="itemrow">
                 <div class="item">
                     <div class="iteminfo">
-                    <img class="itemimage" src="temporaryitem.png" alt="">
-                    <div class="itemname"><p>Chikkin'</p></div>
+                    <img class="itemimage" src="chikkin.png" alt="picture of chicken">
+                    <div class="itemname"><p>Chikkin</p></div>
                     <div class="iteminformation"><p>Tasty Chikkin</p> </div>
-                    <div class="itemprice"><p>420:-</p></div>
+                    <div class="itemprice"><p>$42</p></div>
                 </div>
                     <button class="addtocart">Add To Cart</button>
                 </div>
             </div>
             </div>
+            <div class="itemcontainer">
+                <div class="itemrow">
+                <div class="item">
+                    <div class="iteminfo">
+                    <img class="itemimage" src="ribzz.png" alt="picture of ribs">
+                    <div class="itemname"><p>Ribzz</p></div>
+                    <div class="iteminformation"><p>Delicious ribzz, from an unknown creature</p> </div>
+                    <div class="itemprice"><p>$11</p></div>
+                </div>
+                    <button class="addtocart">Add To Cart</button>
+                </div>
+            </div>
+            </div>
+            <div class="itemcontainer">
+                <div class="itemrow">
+                <div class="item">
+                    <div class="iteminfo">
+                    <img class="itemimage" src="sadpotet.png" alt="picture of a sad potato">
+                    <div class="itemname"><p>Fresh Potet</p></div>
+                    <div class="iteminformation"><p>Freshly picked potet</p> </div>
+                    <div class="itemprice"><p>$10</p></div>
+                </div>
+                    <button class="addtocart">Add To Cart</button>
+                </div>
+            </div>
+            </div>
+            <div class="itemcontainer">
+                <div class="itemrow">
+                <div class="item">
+                    <div class="iteminfo">
+                    <img class="itemimage" src="rabbit.png" alt="picture of unirabbit">
+                    <div class="itemname"><p>UniRabbit</p></div>
+                    <div class="iteminformation"><p>A rabbit, with a horn</p> </div>
+                    <div class="itemprice"><p>$99</p></div>
+                </div>
+                    <button class="addtocart">Add To Cart</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div>
+            <h2 id="painttoys">PaintToys🚗</h2>
+            <div class="allitemcontainer">
+            <div class="itemcontainer">
+                <div class="itemrow">
+                <div class="item">
+                    <div class="iteminfo">
+                    <img class="itemimage" src="bazooka.png" alt="picture of bazooka with sniper scope">
+                    <div class="itemname"><p>Bazooka</p></div>
+                    <div class="iteminformation"><p>A bazooka, with a sniper scope</p> </div>
+                    <div class="itemprice"><p>$79</p></div>
+                </div>
+                    <button class="addtocart">Add To Cart</button>
+                </div>
+            </div>
+            </div>
+            <div class="itemcontainer">
+                <div class="itemrow">
+                <div class="item">
+                    <div class="iteminfo">
+                    <img class="itemimage" src="glasses.png" alt="picture of glasses">
+                    <div class="itemname"><p>Laser Glasses</p></div>
+                    <div class="iteminformation"><p>Definitely not normal glasses</p> </div>
+                    <div class="itemprice"><p>$01</p></div>
+                </div>
+                    <button class="addtocart">Add To Cart</button>
+                </div>
+            </div>
+            </div>
+            <div class="itemcontainer">
+                <div class="itemrow">
+                <div class="item">
+                    <div class="iteminfo">
+                    <img class="itemimage" src="tazer.png" alt="picture of tazer">
+                    <div class="itemname"><p>Tazer</p></div>
+                    <div class="iteminformation"><p>Very kid-friendly</p> </div>
+                    <div class="itemprice"><p>$49</p></div>
+                </div>
+                    <button class="addtocart">Add To Cart</button>
+                </div>
+            </div>
+            </div>
+            <div class="itemcontainer">
+                <div class="itemrow">
+                <div class="item">
+                    <div class="iteminfo">
+                    <img class="itemimage" src="jetpack.png" alt="picture of jetpack with demonic smile">
+                    <div class="itemname"><p>Demonic jetpack</p></div>
+                    <div class="iteminformation"><p>Hooman fuel required</p> </div>
+                    <div class="itemprice"><p>$89</p></div>
+                </div>
+                    <button class="addtocart">Add To Cart</button>
+                </div>
+            </div>
+            </div>
+            <div class="itemcontainer">
+                <div class="itemrow">
+                <div class="item">
+                    <div class="iteminfo">
+                    <img class="itemimage" src="lego.png" alt="picture of asymmetrical lego">
+                    <div class="itemname"><p>Lego</p></div>
+                    <div class="iteminformation"><p>Normal lego, but asymmetrical</p> </div>
+                    <div class="itemprice"><p>$02</p></div>
+                </div>
+                    <button class="addtocart">Add To Cart</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
         </div>
     </main>
     <footer>
         <div class="kontaktinfo">
-            <p>Phone number: 666</p>
-            <p>Mail:</p>
+            <p>Phone number: 420</p>
+            <p>Mail: nope@hotmail.com</p>
             <p></p>
         </div>
         <div class="omoss"></div>
